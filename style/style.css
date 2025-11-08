@@ -1,0 +1,518 @@
+*  {
+	box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    border: solid 1px #D8DEE9;
+    border-radius: 8px;
+}
+
+h1 {
+	margin: 0;
+    color: #094067;
+
+}
+h2 {
+    font-size: xx-large;
+    color: #094067;
+}
+h3 {
+    font-size: x-large;
+}
+p {
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: #3da9fc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+  }
+header {
+    background-color: #ffffff;
+    padding: 10px 0px 0px 0px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 22px;
+}  
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #094067;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+
+nav a:hover {
+    color: #3da9fc;
+    text-decoration: none;
+
+}
+main {
+    flex: 1;
+    margin: 0 15% 0 15%
+}   
+article {
+    overflow: hidden;
+    line-height: 1.5;
+    font-size: large;
+}
+
+details {
+    margin-bottom: 10px;
+    text-align: left;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f7f7f8;
+    border: 1px solid #D8DEE9;
+}
+summary:hover {
+    background-color: #f7f7f8;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid #D8DEE9;
+    border-top: none;
+    font-size: medium;
+    text-align: left;
+}
+
+footer {
+    padding: 10px 0;
+	background-color: #212529;
+    color: #D8DEE9;
+    text-align: left;
+}
+
+footer div div {
+    margin: 0 20px;
+}
+footer h3 {
+    font-size: medium;
+    text-align: left;
+    margin-bottom: 5px;
+    text-decoration: underline #3da9fc;
+    text-decoration-thickness: 2px;
+}
+footer a {
+    color: #D8DEE9;
+    display: block;
+    padding: 5px 0;
+
+}
+.expand-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-tight {
+    margin: 0 28% 0 28%;
+    
+}
+
+.navbar {
+    display: flex;
+    padding: 0px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-title {
+    flex: 1;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 15%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15%;
+
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li {
+    font-size: medium;
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+} 
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    user-select: none;
+    padding-left: 80%;
+    margin-left: 20px;
+    align-self: center; /* Center the hamburger icon vertically */
+
+}
+
+.footer-div {
+    min-width: 25%;
+    margin: 0 30% 0 30%;
+    overflow: hidden;
+    text-align: left;
+}
+.vertical-centered {
+    display: flex;
+    flex-wrap: wrap;
+}
+.float-left {
+    float: left;
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    display: flex;
+    flex-direction: column; /* Damit die Inhalte untereinander angeordnet sind */
+    justify-content: center; /* Vertikale Zentrierung des Textes */
+}
+
+.float-right {
+    float: right;
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    display: flex;
+    justify-content: center; /* Vertikale Zentrierung des Textes */
+    flex-direction: column; /* Damit die Inhalte untereinander angeordnet sind */
+
+}
+.list-emojis {
+    list-style-type: none;
+    text-align: left;
+    display: flex; /* Use Flexbox to arrange items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: space-around; /* Distribute space evenly between items */
+
+}
+.list-emojis li {
+    background-color: #f7f7f8;
+    border-radius: 16px;
+    border: solid 1px #D8DEE9;
+    text-align: left;
+    padding: 10px;
+    font-size: large;
+
+    flex: 1 1 200px; /* Allow items to grow and shrink, with a base width of 200px */
+    max-width: 300px; /* Optional: Set a maximum width for each item */
+
+}
+
+#startpage-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 20px 40px;
+    align-self: flex-start;
+    font-size: 16px;
+    color: #fffffe;
+    background-color: #3da9fc;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+
+}
+
+.download-button:hover {
+    background-color: #6610f2;
+    text-decoration: none;
+}
+
+
+#how-to-install-button {
+    background-color: #ffffff;
+    color: #3da9fc;
+
+}
+#how-to-install-button:hover {
+    background-color: #3da9fc;
+    border-color: #3da9fc;
+    text-decoration: none;
+    color: #fffffe;
+}
+/* IDs für die Startseite */
+#calendar-img {
+    min-width: 200px; /* Mindestbreite des Bildes */
+    min-height: 150px; /* Mindesthöhe des Bildes */
+    display: flex;
+    width: 30%;
+    border-radius: 8px;
+    max-height: auto;
+    overflow: hidden;
+}
+
+#contacts {
+    text-align: left;
+}
+
+#img-container {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: row; /* Elemente in einer Reihe anordnen */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    margin: 30px 20px; /* Außenabstand für den Container */
+
+}
+
+
+#description-h2 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+#description-p {
+    font-size: large;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 0px;
+    text-align: justify;
+
+}
+#padd-left {
+    padding-left: 20px;
+}
+#padd-left-for-right {
+    padding-left: 20px;
+}
+
+/* Tablets Landscape */
+@media screen and (min-width: 900px) and (max-width: 1300px)  {
+    .navbar-title {
+        margin-left: 2%;
+    }
+    .menu-container {
+        margin-right: 2%;
+    }
+
+    main {
+        margin: 0px 2%;
+    }
+
+    article {
+        font-size: medium;
+    }
+    .main-tight {
+        margin: 0 10%;
+    }
+    .footer-div {
+        margin: 0 10%;
+    }
+}
+/* Tablet Screens */
+@media screen and (min-width: 450px) and (max-width: 900px)  {
+    .navbar-title {
+        margin-left: 2%;
+    }
+    .menu-container {
+        margin-right: 2%;
+    }
+    .main-tight {
+        margin: 0 10%;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        display: flex;
+        padding: 10px;
+    }
+	nav a {
+		width: 100%; 
+		float: none;
+        box-sizing: border-box;
+        border-radius: 16px;
+	}
+
+    .menu {
+        display: none;
+        position: absolute;
+        border-bottom: solid #ef4565;
+        margin-top : 300px;
+        padding-bottom: 12px;
+        background-color: #ffffff;
+        right: 0;
+        left: 0;
+        text-align: center;
+        
+    }
+    .menu li {
+        display: flex;
+    }
+    .menu li:hover {
+        display: block;
+    }
+
+    .menu li + li {
+        margin-top: 6px;
+    }
+
+    .menu li a {
+        width: 100%;
+        display: block;
+        padding: 10px 8px;
+    }
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+
+    }
+    .hamburger {
+        display: block;
+        justify-content: center;
+        
+    }
+    .footer-div {
+        margin: 0 10%;
+    }
+}
+
+/* Smartphone Screens */
+@media screen and (max-width: 450px) {
+    .navbar-title {
+        margin-left: 2%;
+    }
+    .menu-container {
+        margin-right: 2%;
+    }
+    
+    main, .main-tight {
+        margin: 0 5% 0 5%;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        display: flex;
+        padding: 10px;
+    }
+	nav a {
+		width: 100%; 
+		float: none;
+        box-sizing: border-box;
+        border-radius: 16px;
+
+	}
+    footer {
+        padding-top: 10px;
+        align-content: center;
+    }
+    footer h3 {
+        text-align: left;
+    }
+    footer a {
+        text-align: left;
+        padding: 5px 0px;
+    }
+    
+	.menu {
+        display: none;
+        position: absolute;
+        border-bottom: solid #ef4565;
+        margin-top : 300px;
+        padding-bottom: 12px;
+        background-color: #ffffff;
+        right: 0;
+        left: 0;
+        text-align: center;
+        
+    }
+    .menu li {
+        display: flex;
+    }
+    .menu li:hover {
+        display: block;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 6px;
+    }
+
+    .menu li a {
+        width: 100%;
+        display: block;
+        padding: 10px 8px;
+    }
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+
+    }
+    .hamburger {
+        display: block;
+        justify-content: center;
+        
+    }
+    #how-to-install-button {
+        padding: 10px;
+    }
+    .footer-div {
+        margin: 0 5%;
+    }
+    .list-emojis li {
+        margin: 10px 0px 10px 0px; 
+    }
+    #calendar-img {
+        margin: 0px;
+        min-width: 300px;
+        min-height: 250px;
+    }
+}
+
+
+/* Desktop Screens */
+@media screen and (min-width: 880px) {
+    .float-left, .float-right {
+        max-width: 50%;
+    }
+}

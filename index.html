@@ -1,1 +1,96 @@
-<h1>Test HTML</h1>
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CvO Stundenplan</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="expand-page">
+    <nav class="navbar">
+            <h1 class="navbar-title">CvO Stundenplan</h1>
+            <ul class="menu-container">
+                <input type="checkbox" id="checkbox-toggle">
+                <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+                <ul class="menu">
+                    <li>
+                        <a aria-current="page">Startseite</a>
+                    </li>
+                    <li>
+                        <a href="docs.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Über das Projekt</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </ul>
+    </nav>
+    <main>
+        <article class="vertical-centered">
+			<div class="float-left">
+				<h2 id="description-h2">Die App für deinen Schulalltag!</h2>
+				<p id="description-p">
+					CvO Stundenplan ist eine Android App, die deinen Stundenplan und aktuelle Hinweise kombiniert - Mithilfe der App weißt du sofort, wann ein Kurs stattfindet und ob er von Abweichungen betroffen ist, ohne jeden Kurs in den aktuellen Hinweisen suchen zu müssen!
+				</p>
+    			<div id="startpage-buttons">
+        			<a href="https://github.com/Krintni/CvO-Stundenplan/releases/latest/download/CvO_Stundenplan.apk" class="download-button" download>Download</a>
+                    <a href="docs.html#Installation" class="download-button" id="how-to-install-button" >Wie installiere ich die App?</a>
+				</div>
+            </div>
+            <div class="float-right" id="img-container">
+				<img src="media/screenshot.png" alt="Bild von Kalender App und Stundenplan"  id="calendar-img">
+			</div>
+        </article>
+        <article>
+            <h2>Übersicht von CvO Stundenplan</h2>
+                <ul class="list-emojis">
+                    <li>
+                        <strong>🗓️ Digitaler Stundenplan</strong>
+                        <br>
+                        Trage deinen Stundenplan ein und gestalte ihn nach deinem Geschmack. Siehe wann deine Kurse sind, wo und mit welcher Lehrkraft sie stattfinden.
+                    </li>
+                    <li>
+                        <strong>💡 Immer aktuell</strong>
+                        <br>
+                        Bleib informiert, wann ein Kurs von einem Hinweis betroffen ist und sehe den vollständigen Hinweis direkt in der App.
+                    </li>
+                    <li>
+                        <strong>⚙️ Schnell eingerichtet</strong>
+                        <br>
+                        Trage deine Kurse ganz einfach in die App ein. In der Q1 und Q2 werden mithilfe von Rastern die Unterrichtszeiten sogar automatisch ausgewählt.
+                    </li>
+                    <li>
+                        <strong>📝 Hausaufgaben und Klausuren</strong>
+                        <br>
+                        Trage Hausaufgaben, Bemerkungen oder Klausuren ein und bleibe stets organisiert.
+                    </li>
+                    <li>
+                        <strong>📖 Profile</strong>
+                        <br>
+                        Du kannst nicht nur deinen Stundenplan sehen, sondern auch den deiner Freunde. Teile deinen Stundenplan oder importiere den eines Freunds!
+                    </li>
+                </ul>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-div">
+            <div class="float-left">
+                <h3>App</h3>
+                <a aria-current="page">Download</a>
+                <a href="docs.html">FAQ</a>
+                <a href="about.html">Über das Projekt</a>
+            </div>
+            <div class="float-right">
+                <h3>Sonstiges</h3>
+                <a href="contact.html">Kontakt</a>
+                <a href="https://github.com/Krintni/CvO-Stundenplan" target="_blank">GitHub</a>
+                <a href="copyright.html">Copyright</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
